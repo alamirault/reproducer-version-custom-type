@@ -1,0 +1,10 @@
+parameters:
+    mongodb_url: 'mongodb://your_user:your_password@your_host:your_port'
+    mongodb_database: 'your_database'
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\:
+        resource: '../src/'
